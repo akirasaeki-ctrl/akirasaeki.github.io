@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IBDP Computer Science Tech Portfolio</title>
+    
+    <!-- External stylesheet linked as requested -->
+    <link rel="stylesheet" href="style.css">
+    
+    <!-- Tailwind CSS for robust, responsive dark-mode styling -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        slate: {
+                            950: '#0b0f19',
+                        }
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                        mono: ['JetBrains Mono', 'monospace'],
+                    }
+                }
+            }
+        }
+    </script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet">
+</head>
+<body class="bg-slate-950 text-slate-100 font-sans antialiased min-h-screen selection:bg-indigo-500 selection:text-white">
+
+    <!-- Header / Navigation -->
+    <header class="sticky top-0 z-50 backdrop-blur-md bg-slate-950/80 border-b border-slate-800">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
+            <div class="flex items-center space-x-3">
+                <div class="h-10 w-10 rounded-lg bg-indigo-600 flex items-center justify-center font-bold text-xl text-white shadow-lg shadow-indigo-500/20">
+                    CP
+                </div>
+                <div>
+                    <h1 class="text-lg font-bold tracking-tight text-white">Alex Chen</h1>
+                    <p class="text-xs text-indigo-400 font-mono tracking-wider uppercase">IBDP CS Portfolio</p>
+                </div>
+            </div>
+            
+            <nav class="hidden md:flex space-x-8 text-sm font-medium text-slate-400">
+                <a href="#phase1" class="hover:text-indigo-400 transition-colors">Phase 1</a>
+                <a href="#phase2" class="hover:text-indigo-400 transition-colors">Phase 2</a>
+                <a href="#phase3" class="hover:text-indigo-400 transition-colors">Phase 3</a>
+            </nav>
+
+            <span class="inline-flex items-center gap-1.5 py-1.5 px-3 rounded-full text-xs font-semibold bg-slate-800 text-slate-300 border border-slate-700">
+                <span class="h-2 w-2 rounded-full bg-emerald-500 animate-pulse"></span>
+                Grade 10 • Year 1
+            </span>
+        </div>
+    </header>
+
+    <!-- Main Content Area -->
+    <main class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 space-y-24">
+
+        <!-- Portfolio Intro Hero -->
+        <section class="text-center max-w-3xl mx-auto space-y-6 py-8">
+            <div class="inline-block px-3 py-1 rounded-full bg-indigo-950/50 text-indigo-400 border border-indigo-500/30 text-xs font-mono mb-4">
+                Internal Assessment Preparation
+            </div>
+            <h2 class="text-4xl sm:text-5xl font-extrabold tracking-tight text-white sm:leading-tight">
+                Computer Science <span class="bg-gradient-to-r from-indigo-400 via-purple-400 to-pink-400 bg-clip-text text-transparent">Technical Portfolio</span>
+            </h2>
+            <p class="text-lg text-slate-400 leading-relaxed">
+                A comprehensive showcase of foundational computer systems, local network design, physical processor dynamics, and logic circuit architectures curated for the IB Diploma Programme.
+            </p>
+        </section>
+
+        <!-- SECTION 1: Phase 1: Local Intranet Architecture -->
+        <section id="phase1" class="scroll-mt-28 bg-slate-900/40 rounded-3xl p-6 sm:p-10 border border-slate-800 shadow-xl shadow-black/20">
+            <div class="flex flex-col lg:flex-row lg:items-start lg:justify-between gap-10">
+                <div class="lg:w-1/3 space-y-4">
+                    <span class="text-xs font-bold uppercase tracking-widest text-indigo-400 font-mono">Phase 1</span>
+                    <h3 class="text-3xl font-bold text-white tracking-tight">Local Intranet Architecture</h3>
+                    <p class="text-slate-400 leading-relaxed text-sm">
+                        This phase analyzes the core structural layouts of local networks, explicitly contrasting packet handling, addressing spaces, and hardware routing versus switching configurations in standard intranet environments.
+                    </p>
+                </div>
+
+                <div class="lg:w-2/3 grid grid-cols-1 md:grid-cols-2 gap-6">
+                    <!-- Router Card -->
+                    <div class="bg-slate-900/80 p-6 rounded-2xl border border-slate-800 hover:border-indigo-500/30 transition-all duration-300">
+                        <div class="h-12 w-12 rounded-xl bg-indigo-950 flex items-center justify-center mb-6 text-indigo-400">
+                            <!-- Router SVG Icon -->
+                            <svg class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M8.25 21v-4.875c0-.621.504-1.125 1.125-1.125h5.25c.621 0 1.125.504 1.125 1.125V21m0 0h4.5V3.545M12.75 21h7.5V10.75M2.25 21h1.5m18 0h-18M2.25 9l4.5-1.636M18.75 3l-1.5.545m0 6.205l3 1m-1.5-7.25l-12 4.364m0 0L3 9.75M10.5 8.5h-.008v.008h.008V8.5zm3.75 0h-.008v.008h.008V8.5z" />
+                            </svg>
+                        </div>
+                        <h4 class="text-lg font-bold text-white mb-3">Router Topology (Layer 3)</h4>
+                        <p class="text-slate-400 text-sm leading-relaxed mb-4">
+                            Routers connect entirely separate networks and operate at the Network Layer (Layer 3) of the OSI model. They utilize dynamic routing tables and logical IP addresses to dispatch data packets intelligently across wide paths.
+                        </p>
+                        <div class="p-3 bg-slate-950 rounded-xl border border-slate-850 font-mono text-xs text-indigo-300">
+                            Key Attribute: WAN-LAN Routing
+                        </div>
+                    </div>
+
+                    <!-- Switch Card -->
+                    <div class="bg-slate-900/80 p-6 rounded-2xl border border-slate-800 hover:border-purple-500/30 transition-all duration-300">
+                        <div class="h-12 w-12 rounded-xl bg-purple-950 flex items-center justify-center mb-6 text-purple-400">
+                            <!-- Switch SVG Icon -->
+                            <svg class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M14.25 9.75L16.5 12l-2.25 2.25m-4.5 0L7.5 12l2.25-2.25M6 20.25h12A2.25 2.25 0 0020.25 18V6A2.25 2.25 0 0018 3.75H6A2.25 2.25 0 003.75 6v12A2.25 2.25 0 006 20.25z" />
+                            </svg>
+                        </div>
+                        <h4 class="text-lg font-bold text-white mb-3">Switch Topology (Layer 2)</h4>
+                        <p class="text-slate-400 text-sm leading-relaxed mb-4">
+                            Switches connect individual end-devices within a singular, localized network at the Data Link Layer (Layer 2). They optimize local frame delivery using hardware MAC addresses, constructing temporary point-to-point connections.
+                        </p>
+                        <div class="p-3 bg-slate-950 rounded-xl border border-slate-850 font-mono text-xs text-purple-300">
+                            Key Attribute: Low Latency LAN Forwarding
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- SECTION 2: Phase 2: The Moore's Law Photographic Essay -->
+        <section id="phase2" class="scroll-mt-28 bg-slate-900/40 rounded-3xl p-6 sm:p-10 border border-slate-800 shadow-xl shadow-black/20">
+            <div class="space-y-8">
+                <div class="max-w-3xl space-y-4">
+                    <span class="text-xs font-bold uppercase tracking-widest text-indigo-400 font-mono">Phase 2</span>
+                    <h3 class="text-3xl font-bold text-white tracking-tight">The Moore's Law Photographic Essay</h3>
+                </div>
+
+                <!-- 3 Image Placeholders -->
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                    <!-- Image Card 1 -->
+                    <div class="group bg-slate-900 rounded-2xl overflow-hidden border border-slate-800">
+                        <div class="aspect-video bg-slate-950 flex flex-col items-center justify-center border-b border-slate-800 relative group-hover:bg-slate-900/80 transition-colors duration-300">
+                            <span class="text-xs font-mono text-indigo-400 uppercase tracking-widest mb-2">Microscopic Scale</span>
+                            <!-- Clean CPU Die Illustration SVG -->
+                            <svg class="w-12 h-12 text-slate-700 group-hover:text-indigo-400 transition-colors duration-300" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M9 17.25v1.007a3 3 0 01-.879 2.122L7.5 21h9l-.621-.621A3 3 0 0115 18.257V17.25m6-12V15a2.25 2.25 0 01-2.25 2.25H5.25A2.25 2.25 0 013 15V5.25m18 0A2.25 2.25 0 0018.75 3H5.25A2.25 2.25 0 003 5.25m18 0V12a2.25 2.25 0 01-2.25 2.25H5.25A2.25 2.25 0 013 12V5.25" />
+                            </svg>
+                        </div>
+                        <div class="p-5">
+                            <h4 class="text-sm font-semibold text-white">1. Transistor Miniaturization</h4>
+                            <p class="text-xs text-slate-400 mt-2">Visualizing silicon-level density scaling as structural elements shrink down to physical sub-nanometer levels.</p>
+                        </div>
+                    </div>
+
+                    <!-- Image Card 2 -->
+                    <div class="group bg-slate-900 rounded-2xl overflow-hidden border border-slate-800">
+                        <div class="aspect-video bg-slate-950 flex flex-col items-center justify-center border-b border-slate-800 relative group-hover:bg-slate-900/80 transition-colors duration-300">
+                            <span class="text-xs font-mono text-purple-400 uppercase tracking-widest mb-2">Thermodynamics</span>
+                            <!-- Clean Temperature Grid SVG -->
+                            <svg class="w-12 h-12 text-slate-700 group-hover:text-purple-400 transition-colors duration-300" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M12 9v3.75m0-10.036A11.959 11.959 0 013.598 6 11.99 11.99 0 003 9.75c0 5.592 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.31-.21-2.57-.598-3.75h-.152c-3.196 0-6.1-1.249-8.25-3.286zm0 13.036h.008v.008H12v-.008z" />
+                            </svg>
+                        </div>
+                        <div class="p-5">
+                            <h4 class="text-sm font-semibold text-white">2. Silicon Heat Dissipation</h4>
+                            <p class="text-xs text-slate-400 mt-2">Documenting the cooling solutions, microchannels, and modern thermal throttles forced by high energy density.</p>
+                        </div>
+                    </div>
+
+                    <!-- Image Card 3 -->
+                    <div class="group bg-slate-900 rounded-2xl overflow-hidden border border-slate-800">
+                        <div class="aspect-video bg-slate-950 flex flex-col items-center justify-center border-b border-slate-800 relative group-hover:bg-slate-900/80 transition-colors duration-300">
+                            <span class="text-xs font-mono text-pink-400 uppercase tracking-widest mb-2">Atomic Limits</span>
+                            <!-- Clean Wave/Quantum SVG -->
+                            <svg class="w-12 h-12 text-slate-700 group-hover:text-pink-400 transition-colors duration-300" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 13.5l10.5-11.25L12 10.5h8.25L9.75 21.75 12 13.5H3.75z" />
+                            </svg>
+                        </div>
+                        <div class="p-5">
+                            <h4 class="text-sm font-semibold text-white">3. Quantum Tunneling Hurdles</h4>
+                            <p class="text-xs text-slate-400 mt-2">Diagrammatic rendering of electrons bypassing atomic silicon walls when scale constraints fall below 3nm.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Analysis Paragraph -->
+                <div class="bg-slate-950/60 p-6 sm:p-8 rounded-2xl border border-slate-800 space-y-4">
+                    <h4 class="text-lg font-bold text-white flex items-center gap-2">
+                        <span class="h-2 w-2 rounded-full bg-indigo-500"></span>
+                        Architectural Analysis: Size and Heat Constraints
+                    </h4>
+                    <p class="text-slate-300 text-sm sm:text-base leading-relaxed">
+                        As transistor density tracks Moore's classical projection, the chip-making industry encounters severe physical walls, primarily defined by <strong class="text-indigo-400 font-medium">thermal design power (TDP) constraints</strong> and the law of <strong class="text-indigo-400 font-medium">sub-threshold leakage currents</strong>. Standard silicon gate oxide structures cannot shrink past a single atomic monolayer without prompting <em class="text-slate-100">quantum tunneling</em>, allowing electrons to seep across off-state switches. Concurrently, reducing size limits concentrates extreme thermal flux in smaller volumes, escalating heat densities to levels exceeding typical commercial heatsink dissipation thresholds. Consequently, computer architecture has shifted from single-core frequency scaling to multi-core arrangements and highly custom hardware accelerators.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- SECTION 3: Phase 3: The Half-Adder Logic Gate Blueprint -->
+        <section id="phase3" class="scroll-mt-28 bg-slate-900/40 rounded-3xl p-6 sm:p-10 border border-slate-800 shadow-xl shadow-black/20">
+            <div class="space-y-8">
+                <div class="max-w-3xl space-y-4">
+                    <span class="text-xs font-bold uppercase tracking-widest text-indigo-400 font-mono">Phase 3</span>
+                    <h3 class="text-3xl font-bold text-white tracking-tight">The Half-Adder Logic Gate Blueprint</h3>
+                </div>
+
+                <div class="grid grid-cols-1 lg:grid-cols-2 gap-10">
+                    <!-- Truth Table -->
+                    <div class="space-y-4">
+                        <h4 class="text-lg font-semibold text-white">1. Half-Adder Truth Table</h4>
+                        <div class="overflow-hidden rounded-xl border border-slate-800">
+                            <table class="w-full text-left border-collapse bg-slate-950/40">
+                                <thead>
+                                    <tr class="bg-slate-900 border-b border-slate-800 text-xs font-mono text-slate-400 uppercase tracking-wider">
+                                        <th class="py-3 px-4">Input A</th>
+                                        <th class="py-3 px-4">Input B</th>
+                                        <th class="py-3 px-4 text-indigo-400">Sum (S)</th>
+                                        <th class="py-3 px-4 text-purple-400">Carry (C)</th>
+                                    </tr>
+                                </thead>
+                                <tbody class="divide-y divide-slate-850 font-mono text-sm text-slate-300">
+                                    <tr class="hover:bg-slate-900/50 transition-colors">
+                                        <td class="py-3 px-4">0</td>
+                                        <td class="py-3 px-4">0</td>
+                                        <td class="py-3 px-4 text-indigo-400 font-bold">0</td>
+                                        <td class="py-3 px-4 text-purple-400 font-bold">0</td>
+                                    </tr>
+                                    <tr class="hover:bg-slate-900/50 transition-colors">
+                                        <td class="py-3 px-4">0</td>
+                                        <td class="py-3 px-4">1</td>
+                                        <td class="py-3 px-4 text-indigo-400 font-bold">1</td>
+                                        <td class="py-3 px-4 text-purple-400 font-bold">0</td>
+                                    </tr>
+                                    <tr class="hover:bg-slate-900/50 transition-colors">
+                                        <td class="py-3 px-4">1</td>
+                                        <td class="py-3 px-4">0</td>
+                                        <td class="py-3 px-4 text-indigo-400 font-bold">1</td>
+                                        <td class="py-3 px-4 text-purple-400 font-bold">0</td>
+                                    </tr>
+                                    <tr class="hover:bg-slate-900/50 transition-colors">
+                                        <td class="py-3 px-4">1</td>
+                                        <td class="py-3 px-4">1</td>
+                                        <td class="py-3 px-4 text-indigo-400 font-bold">0</td>
+                                        <td class="py-3 px-4 text-purple-400 font-bold">1</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <p class="text-xs text-slate-400 leading-relaxed font-mono">
+                            Logical Formulas:<br>
+                            Sum (S) = A ⊕ B (XOR Gate)<br>
+                            Carry (C) = A · B (AND Gate)
+                        </p>
+                    </div>
+
+                    <!-- Logical Gate Blueprint Diagram Placeholder -->
+                    <div class="space-y-4">
+                        <h4 class="text-lg font-semibold text-white">2. Circuit Schematic</h4>
+                        <div class="bg-slate-950 rounded-xl border border-slate-800 p-6 flex flex-col items-center justify-center min-h-[250px]">
+                            
+                            <!-- Vector-based Half-Adder Circuit Blueprint -->
+                            <svg class="w-full max-w-sm h-auto" viewBox="0 0 400 220" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <!-- Inputs -->
+                                <text x="20" y="55" fill="#94a3b8" font-family="JetBrains Mono" font-size="14">Input A</text>
+                                <text x="20" y="165" fill="#94a3b8" font-family="JetBrains Mono" font-size="14">Input B</text>
+
+                                <!-- Input Paths & Branches -->
+                                <!-- Line A to XOR -->
+                                <path d="M90 50 H 220" stroke="#818cf8" stroke-width="2" />
+                                <circle cx="130" cy="50" r="3" fill="#818cf8" />
+                                
+                                <!-- Branch A down to AND -->
+                                <path d="M130 50 V 140 H 220" stroke="#818cf8" stroke-width="2" />
+
+                                <!-- Line B to AND -->
+                                <path d="M90 160 H 220" stroke="#a78bfa" stroke-width="2" />
+                                <circle cx="160" cy="160" r="3" fill="#a78bfa" />
+
+                                <!-- Branch B up to XOR -->
+                                <path d="M160 160 V 70 H 220" stroke="#a78bfa" stroke-width="2" />
+
+                                <!-- XOR Gate Representation -->
+                                <g transform="translate(220, 30)">
+                                    <!-- Base Gate -->
+                                    <path d="M 0 0 C 10 10, 10 30, 0 40 H 15 C 25 40, 35 25, 35 20 C 35 15, 25 0, 15 0 Z" fill="#312e81" stroke="#818cf8" stroke-width="2"/>
+                                    <!-- Back curved line for XOR -->
+                                    <path d="M -5 0 C 5 10, 5 30, -5 40" stroke="#818cf8" stroke-width="2"/>
+                                    <text x="8" y="25" fill="#ffffff" font-family="Inter" font-weight="bold" font-size="10">XOR</text>
+                                    <!-- Connection out -->
+                                    <path d="M 35 20 H 90" stroke="#818cf8" stroke-width="2" />
+                                </g>
+
+                                <!-- AND Gate Representation -->
+                                <g transform="translate(220, 130)">
+                                    <path d="M 0 0 V 40 H 15 C 30 40, 35 30, 35 20 C 35 10, 30 0, 15 0 Z" fill="#4c1d95" stroke="#a78bfa" stroke-width="2"/>
+                                    <text x="8" y="25" fill="#ffffff" font-family="Inter" font-weight="bold" font-size="10">AND</text>
+                                    <!-- Connection out -->
+                                    <path d="M 35 20 H 90" stroke="#a78bfa" stroke-width="2" stroke-linecap="round" />
+                                </g>
+
+                                <!-- Outputs -->
+                                <text x="320" y="55" fill="#818cf8" font-family="JetBrains Mono" font-weight="bold" font-size="14">SUM (S)</text>
+                                <text x="320" y="155" fill="#a78bfa" font-family="JetBrains Mono" font-weight="bold" font-size="14">CARRY (C)</text>
+                            </svg>
+                            
+                            <span class="text-xs text-slate-500 font-mono mt-4">Interactive Logic Blueprint Mock</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="border-t border-slate-900 bg-slate-950 py-12 mt-24">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col md:flex-row items-center justify-between gap-6 text-slate-500 text-sm">
+            <p>© 2026 Alex Chen • IBDP CS Portfolio. Designed for internal tracking assessment.</p>
+            <div class="flex space-x-6">
+                <a href="#" class="hover:text-indigo-400 transition-colors">Documentation</a>
+                <a href="#" class="hover:text-indigo-400 transition-colors">Resources</a>
+                <a href="#" class="hover:text-indigo-400 transition-colors">Terms</a>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
